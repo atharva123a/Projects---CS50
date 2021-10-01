@@ -1,0 +1,9 @@
+a, u
+{
+    font-size: small;
+}
+u: hover
+{
+    color: red;
+    cursor: pointer;
+}
