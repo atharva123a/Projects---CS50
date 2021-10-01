@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hello!</title>
+        <script>
+            let counter = 0;
+
+            function increment()
+            {
+                counter ++;
+                document.querySelector('#result').innerHTML = 'Counter: ' + counter;
+
+                if (counter === 11){
+                    document.querySelector('body').style.backgroundColor = 'red';
+                    document.querySelector('#result').innerHTML = 'Red stands for love and love is Radhika.';
+                    document.querySelector('#cyan').innerHTML = 'Surprise!';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="increment(); return false">
+            <input type="submit">
+        </form>
+        <div id = "result">
+              Counter: 0
+
+        </div>
+        <div id = 'cyan'>
+            Wait at a surprise at 11!
+        </div>
+    </body>
+</html>

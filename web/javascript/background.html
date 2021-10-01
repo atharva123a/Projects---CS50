@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hello!</title>
+    </head>
+    <body>
+        <p>These are some buttons. Click on them for fun!</p>
+        <button id = "red">R</button>
+        <button id = "blue">B</button>
+        <button id = "green">G</button>
+        <button id = "original">Original</botton>
+        <script>
+            let color = document.querySelector('body');
+            document.querySelector("#red").onclick = function(){
+                color.style.backgroundColor = 'red';
+            }
+            document.querySelector('#green').onclick = function(){
+                color.style.backgroundColor = 'green';
+            }
+            document.querySelector("#blue").onclick = function(){
+                color.style.backgroundColor = 'blue';
+            }
+            document.querySelector("#original").onclick = function(){
+                color.style.backgroundColor = 'white';
+            }
+        </script>
+    </body>
+</html>

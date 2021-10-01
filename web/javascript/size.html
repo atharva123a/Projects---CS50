@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hello!</title>
+    </head>
+    <body>
+        <p>This is a paragraph.</p>
+        <select id = "weight">
+            <option value="bold">Bold</option>
+            <option value="normal" selected>Normal</option>
+        </select>
+        <select id='size'>
+            <option value="large">Large</option>
+            <option value="medium" selected>Medium</option>
+            <option value="small">Small</option>
+        </select>
+        <script>
+            document.querySelector('#weight').onchange = function() {
+                document.querySelector('p').style.fontWeight = this.value
+            }
+            document.querySelector('#size').onchange = function() {
+                document.querySelector('p').style.fontSize = this.value
+            }
+        </script>
+    </body>
+</html>
